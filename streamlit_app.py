@@ -120,3 +120,4 @@ if st.button("統計を取得してブリテン用テキストを生成", type="
         else:
             st.success("取得完了！")
             st.subheader("結果")
+            st.text_area("結果", res_text, height=400)
