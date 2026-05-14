@@ -70,6 +70,7 @@ def get_historical_weather(lat, lon, target_month, target_day, years, include_sn
             results.append(f"降雪があった日数: {(snow > 0).sum()}/{len(snow)}日")
             max_snow = snow.max()
             results.append(f"期間中最大降雪量: {max_snow:.2f}cm ({target_days.loc[snow.idxmax(), 'time'].year}年)")
+        results.append("OpenMeteo Historical Weather API により作成")
 
         return "\n".join(results)
     except Exception as e:
