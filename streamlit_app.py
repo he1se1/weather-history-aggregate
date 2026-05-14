@@ -1,9 +1,9 @@
-import streamlit as st
+import streamlit as st # type: ignore
 import requests
 import pandas as pd
 from datetime import datetime
-import folium
-from streamlit_folium import st_folium
+import folium # type: ignore
+from streamlit_folium import st_folium # type: ignore
 
 # ページ設定
 st.set_page_config(
