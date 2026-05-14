@@ -1,0 +1,18 @@
+[project]
+name = "weather-history-aggregate"
+version = "0.1.0"
+description = "オリエンテーリング大会のブリテン作成を支援する、過去の気象統計取得ツール"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+    "pandas",
+    "numpy",
+]
+
+[project.scripts]
+wx-agg = "weather_history_aggregate.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
